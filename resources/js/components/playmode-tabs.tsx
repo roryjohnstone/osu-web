@@ -25,7 +25,7 @@ interface Props {
 export default class PlaymodeTabs extends React.Component<Props> {
   render() {
     return (
-      <ul className={classWithModifiers('game-mode', this.props.modifiers)}>
+      <ul className={classWithModifiers('game-mode hidden-xs', this.props.modifiers)}>
         {this.props.entries.map(this.renderLink)}
       </ul>
     );
